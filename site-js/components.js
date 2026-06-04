@@ -5,7 +5,7 @@
     let studentBanners = document.querySelectorAll('.student-deactivation-banner');
     
     studentBanners.forEach(function(el) {
-        el.remove('.student-deactivation-banner');
+        el.remove();
     }); 
   }
 
