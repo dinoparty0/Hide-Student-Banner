@@ -9,7 +9,7 @@
         el.remove();
     }); 
 
-    popOver.foreach(function(el) {
+    popOver.forEach(function(el) {
         el.remove();
     });
   }
