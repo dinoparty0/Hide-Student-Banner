@@ -50,9 +50,7 @@ jobs:
             --base main \
             --head staging \
             --title "release: ${{ env.RELEASE_DATE }}" \
-            --body "All features merged into \`staging\` will show up here automatically.
-          ### 🔀 Commits included in this release:
-          $COMMIT_LOG"
+            --body "$COMMIT_LOG"
 
       - name: Update Existing Release PR Title and Body
         if: env.PR_NUMBER != ''
