@@ -2,11 +2,16 @@
 
 (function() {
   function removeComponents() {
-    let studentBanners = document.querySelectorAll('.student-deactivation-banner');
+    const studentBanners = document.querySelectorAll('.student-deactivation-banner');
+    const popOver = document.querySelectorAll('[class*="feature-callout-popover_popover"]');
     
     studentBanners.forEach(function(el) {
         el.remove();
     }); 
+
+    popOver.forEach(function(el) {
+        el.remove();
+    });
   }
 
 removeComponents();
